@@ -1,0 +1,25 @@
+{
+    "name": "Codenames keys",
+    "prefer_related_applications": false,
+    "short_name": "Codenames",
+    "start_url": "base.html",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/icons/16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "images/icons/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "images/icons/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
