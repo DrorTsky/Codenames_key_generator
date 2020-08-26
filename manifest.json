@@ -4,6 +4,8 @@
     "short_name": "Codenames",
     "start_url": "base.html",
     "display": "standalone",
+    "theme_color": "#3367D6",
+    "background_color": "#3367D6",
     "orientation": "portrait-primary",
     "icons": [
         {
@@ -20,6 +22,18 @@
             "src": "images/icons/512.png",
             "type": "image/png",
             "sizes": "512x512"
+        },
+        {
+            "src": "images/icons/maskable_100.png",
+            "type": "image/png",
+            "sizes": "100x100",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/icons/maskable_320.png",
+            "type": "image/png",
+            "sizes": "320x320",
+            "purpose": "any maskable"
         }
     ]
 }
