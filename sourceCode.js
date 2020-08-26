@@ -60,3 +60,10 @@ function randomSet() {
 
 newBoard.addEventListener('click', randomSet)
 randomSet()
+
+
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceWorker.js');
+  }
+  
