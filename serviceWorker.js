@@ -24,7 +24,7 @@ self.addEventListener('install', event => {
     caches.open(PRECACHE)
       .then(cache => {
           return cache.addAll([
-              'base.html',
+              'index.html',
               'album.css',
               'sourceCode.js',
               'manifest.json',
