@@ -70,5 +70,4 @@ if ('serviceWorker' in navigator) {
         }).catch(err => {
             console.log("sw failed", err);
         });
-});
 }
