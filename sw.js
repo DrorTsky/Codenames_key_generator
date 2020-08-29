@@ -1,6 +1,5 @@
-const cacheName = "Codenames";
+const cacheName = 'Codenames';
 const resourcesToPrecache = [
-    '/',
     'index.html',
     'album.css',
     'sourceCode.js',
@@ -16,10 +15,15 @@ const resourcesToPrecache = [
 self.addEventListener('install', event => {
     console.log("installed");
     event.waitUntil(caches.open(cacheName)
-        .then(cache => {
-                return cache.addAll(resourcesToPrecache);
-            })
+    .then(cache => {
+        return cache.addAll(resourcesToPrecache);
+    })
     );
+});
+
+
+self.addEventListener('activate', event => {
+    event.waitUntil(self.clients.claim());
 });
 
 

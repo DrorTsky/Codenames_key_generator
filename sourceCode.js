@@ -62,14 +62,13 @@ newBoard.addEventListener('click', randomSet)
 randomSet()
 
 
-  
-if('serviceWorker' in navigator){
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(req => {
-                console.log("registered", reg);
-            }).catch(err => {
-                console.log("sw failed",err);
-            });
-    });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(req => {
+            console.log("registered", reg);
+        }).catch(err => {
+            console.log("sw failed", err);
+        });
+});
 }
