@@ -71,3 +71,19 @@ if ('serviceWorker' in navigator) {
             console.log("sw failed", err);
         });
 }
+
+function ShareApp() {
+    var text = "Check out this Codenames key generator!\n" + window.location.href;
+    try {
+        navigator.share({
+            files: [],
+            title: 'Share',
+            text: text,
+        }).then(() => console.log('Share was successful.')).catch((error) =>
+            console.log('Sharing failed', error));
+    }
+    catch (error) {
+        console.log('Sharing failed', error);
+    }
+    return false;
+}
