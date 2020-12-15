@@ -1,3 +1,7 @@
+// ************** 
+// CACHE
+// **************
+
 const cacheName = 'Codenames';
 const resourcesToPrecache = [
     'index.html',
@@ -11,6 +15,9 @@ const resourcesToPrecache = [
     'images/default.png',
 ];
 
+// ************** 
+// INSTALL EVENT
+// **************
 
 self.addEventListener('install', event => {
     console.log("installed");
@@ -22,11 +29,17 @@ self.addEventListener('install', event => {
     );
 });
 
+// ************** 
+// ACTIVATE EVENR
+// **************
 
 self.addEventListener('activate', event => {
     event.waitUntil(self.clients.claim());
 });
 
+// ************** 
+// FETCH EVENT
+// **************
 
 self.addEventListener('fetch', function(event) {
     event.respondWith(

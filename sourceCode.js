@@ -3,6 +3,10 @@ var playsFirst = document.querySelector("#whoPlays")
 var newBoard = document.querySelector("#newBoard")
 
 
+// ************** 
+// RANDOMISE BOARD FUNCTION
+// **************
+
 function randomSet() {
 
     var randVar = 3;
@@ -58,10 +62,21 @@ function randomSet() {
     }
 }
 
+// ************** 
+// ADDS RANDOMISE BOARD FUNCTION TO NEW BOARD BUTTON
+// **************
+
 newBoard.addEventListener('click', randomSet)
+
+// ************** 
+// INITIATE BOARD
+// **************
 randomSet()
 
 
+// ************** 
+// SERVICE WORKER
+// **************
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
@@ -71,6 +86,10 @@ if ('serviceWorker' in navigator) {
             console.log("sw failed", err);
         });
 }
+
+// ************** 
+// SHARE APP 
+// **************
 
 function ShareApp() {
     var text = "Check out this Codenames key generator!\n" + window.location.href;
