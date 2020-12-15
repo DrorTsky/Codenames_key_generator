@@ -5,3 +5,5 @@ https://drortsky.github.io/Codenames_key_generator/
 I've used this little project as an opportunity to practice HTML5,
 CSS, Bootstrap 4, Java Script and create a working progressive
 web application.
+
+![gui](https://github.com/DrorTsky/Codenames_key_generator/blob/master/images/codenames.png)
